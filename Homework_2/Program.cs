@@ -33,7 +33,7 @@
 
 // if (number > 99)
 // {
-//     System.Console.WriteLine(ThirdNum (number));
+//     System.Console.WriteLine($"Третья цифра числа {number} -> {ThirdNum (number)}");
 // }
 // else
 // {
