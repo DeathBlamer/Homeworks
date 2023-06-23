@@ -70,3 +70,28 @@
 // int n = Convert.ToInt32(Console.ReadLine());
 
 // NCube(n);
+
+
+// + Задача из семинара, в которой учтены отрицательные значения
+// Задача 4. Напишите программу которая принимает на вход число (N) и выдает на консоль квадраты чисел от -N до -1 или от 1 до N
+
+// void NumSquares(int n)
+// {
+//     if (n > 0)
+//     {
+//    for (int i = 1 ; i <= n; i++)
+//    {
+//         System.Console.WriteLine($"{i} -> {Math.Pow(i, 2)}");
+//    }
+//     }
+//     for (int i = n ; i <= -1; i++)
+//    {
+//         System.Console.WriteLine($"{i} -> {Math.Pow(i, 2)}");
+//    }
+//    System.Console.WriteLine("Вы ввели число 0!");
+// }
+
+// System.Console.Write("Введите N -> ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// NumSquares(n);
