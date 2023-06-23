@@ -2,16 +2,15 @@
 
 // bool FiveNumber(int fivenum)
 // {
-//     {
-//         if(fivenum / 10000 == fivenum % 10)
-//         if(fivenum / 1000 % 10 == fivenum / 10 % 10)
-//         return true;
-//     }
-//     return false;
+//      if(fivenum / 10000 == fivenum % 10)
+//      {
+//           if(fivenum / 1000 % 10 == fivenum / 10 % 10)
+//           return true;
+//      }
+//      return false;
 // }
 
-
-// System.Console.WriteLine("Введите пятизначное число: ");
+// System.Console.Write("Введите пятизначное число -> ");
 // int fivenum = Convert.ToInt32(Console.ReadLine());
 
 // if (fivenum > 9999 && fivenum < 100000 || fivenum < -9999 && fivenum > -100000)
@@ -22,6 +21,7 @@
 // {
 //     System.Console.WriteLine($"Число {fivenum} не пятизначное!");
 // }
+
 
 
 
@@ -56,14 +56,26 @@
 
 
 // Task 23 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// ++ Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от -N до 1.
 
 // void NCube(int n)
 // {
-   
-//    for (int i = 1 ; i <= n; i++)
-//    {
-//         System.Console.WriteLine($"{i} -> {Math.Pow(i, 3)}");
-//    }
+//     if (n > 0 || n < 0)
+//     {
+//         for (int i = 1; i <= n; i++)
+//         {
+//             System.Console.WriteLine($"{i} -> {Math.Pow(i, 3)}");
+//         }
+//         for (int i = n; i <= -1; i++)
+//         {
+//             System.Console.WriteLine($"{i} -> {Math.Pow(i, 3)}");
+//         }
+//     }
+//     else
+//     {
+//         System.Console.WriteLine("Вы ввели число 0!");
+//     }
+
 // }
 
 // System.Console.Write("Введите N -> ");
@@ -77,18 +89,22 @@
 
 // void NumSquares(int n)
 // {
-//     if (n > 0)
+//     if (n > 0 || n < 0)
 //     {
-//    for (int i = 1 ; i <= n; i++)
-//    {
-//         System.Console.WriteLine($"{i} -> {Math.Pow(i, 2)}");
-//    }
+//         for (int i = 1; i <= n; i++)
+//         {
+//             System.Console.WriteLine($"{i} -> {Math.Pow(i, 2)}");
+//         }
+//         for (int i = n; i <= -1; i++)
+//         {
+//             System.Console.WriteLine($"{i} -> {Math.Pow(i, 2)}");
+//         }
 //     }
-//     for (int i = n ; i <= -1; i++)
-//    {
-//         System.Console.WriteLine($"{i} -> {Math.Pow(i, 2)}");
-//    }
-//    System.Console.WriteLine("Вы ввели число 0!");
+//     else
+//     {
+//         System.Console.WriteLine("Вы ввели число 0!");
+//     }
+
 // }
 
 // System.Console.Write("Введите N -> ");
