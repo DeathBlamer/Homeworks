@@ -15,30 +15,35 @@
 
 // Task 13 Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-// int ThirdNum (int number)
-// {
-//     if (number > 99)
-//     {
-//         while (number > 999)
-//         {
-//             number = number / 10;
-//         }
-//     }
-//     int num1 = number % 10;
-//     return num1;
-// }
+int ThirdNum (int number)
+{
+    if (number > 99)
+    {
+        while (number > 999)
+        {
+            number = number / 10;
+        }
+    }
+    int num1 = number % 10;
+    return num1;
+}
 
-// System.Console.Write("Введите число -> ");
-// int number = Convert.ToInt32(Console.ReadLine());
+void Error ()
+{
+    System.Console.WriteLine("Третьей цифры нет");
+}
 
-// if (number > 99)
-// {
-//     System.Console.WriteLine($"Третья цифра числа {number} -> {ThirdNum (number)}");
-// }
-// else
-// {
-//     System.Console.WriteLine("Третьей цифры нет");
-// }
+System.Console.Write("Введите число -> ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number > 99)
+{
+    System.Console.WriteLine($"Третья цифра числа {number} -> {ThirdNum (number)}");
+}
+else
+{
+    Error();
+}
 
 
 // Task 15 Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
