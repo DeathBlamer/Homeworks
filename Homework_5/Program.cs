@@ -116,66 +116,67 @@
 // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
 
 
-// double [] CreateRandomArray(int size, double minValue, double maxValue)
-// {
-//     double[] array = new double[(int)size];
-//     Random random = new Random();
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         array[i] = Math.Round((random.NextDouble() * (maxValue - minValue) + minValue), 2);
-//     }
-//     return array;
-// }
 
-// void PrintArray(double[] array)
-// {
-//     System.Console.Write("[");
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         System.Console.Write(array[i]);
-//         if (i < array.Length - 1)
-//         {
-//             System.Console.Write(", ");
-//         }
-//     }
-//     System.Console.Write("]");
-//     System.Console.WriteLine();
-// }
+double [] CreateRandomArray(int size, double minValue, double maxValue)
+{
+    double[] array = new double[(int)size];
+    Random random = new Random();
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = Math.Round((random.NextDouble() * (maxValue - minValue) + minValue), 2);
+    }
+    return array;
+}
 
-// double DiffArray (double[] array)
-// {   
-//     double max = 0;
-//     double min = 0;
-//     double diff = 0;
-//     for (int i = 0; i < array.Length; i++)
-//     {
+void PrintArray(double[] array)
+{
+    System.Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write(array[i]);
+        if (i < array.Length - 1)
+        {
+            System.Console.Write(", ");
+        }
+    }
+    System.Console.Write("]");
+    System.Console.WriteLine();
+}
 
-//         if (max > array [i])
-//         {
-//             max = array [i];
-//         }
-//         else
-//         {
-//             if (min < array [i])
-//             {
-//                 min = array [i];
-//             }
-//         }    
-//     }
-//     diff = max - min;
-//     return diff;
-// }
+double DiffArray (double[] array)
+{   
+    double max = array[0];
+    double min = array[0];
+    double diff = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
 
-// System.Console.WriteLine("Input array size: ");
-// int size = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine("Input minimal value of array element: ");
-// double minValue = Convert.ToDouble(Console.ReadLine());
-// System.Console.WriteLine("Input maximal value of array element: ");
-// double maxValue = Convert.ToDouble(Console.ReadLine());
-// System.Console.WriteLine();
+        if (max < array [i])
+        {
+            max = array [i];
+        }
+        else
+        {
+            if (min > array [i])
+            {
+                min = array [i];
+            }
+        }    
+    }
+    diff = Math.Round((max - min), 2);
+    return diff;
+}
 
-// double[] myArray = CreateRandomArray(size, minValue, maxValue);
-// double diff = DiffArray (myArray);
+System.Console.WriteLine("Input array size: ");
+int size = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Input minimal value of array element: ");
+double minValue = Convert.ToDouble(Console.ReadLine());
+System.Console.WriteLine("Input maximal value of array element: ");
+double maxValue = Convert.ToDouble(Console.ReadLine());
+System.Console.WriteLine();
 
-// PrintArray(myArray);
-// System.Console.WriteLine($"Разница между минимальным и максимальным элементами массива = {diff}");
+double[] myArray = CreateRandomArray(size, minValue, maxValue);
+double diff = DiffArray (myArray);
+
+PrintArray(myArray);
+System.Console.WriteLine($"Разница между минимальным и максимальным элементами массива = {diff}");
