@@ -1,0 +1,15 @@
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\Homework_7.csproj.AssemblyReference.cache
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\Homework_7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\Homework_7.AssemblyInfoInputs.cache
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\Homework_7.AssemblyInfo.cs
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\Homework_7.csproj.CoreCompileInputs.cache
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\bin\Debug\net6.0\Homework_7.exe
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\bin\Debug\net6.0\Homework_7.deps.json
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\bin\Debug\net6.0\Homework_7.runtimeconfig.json
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\bin\Debug\net6.0\Homework_7.dll
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\bin\Debug\net6.0\Homework_7.pdb
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\Homework_7.dll
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\refint\Homework_7.dll
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\Homework_7.pdb
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\Homework_7.genruntimeconfig.cache
+D:\Studies\Programming\C#\Seminar C#\Homeworks\Homework_7\obj\Debug\net6.0\ref\Homework_7.dll
