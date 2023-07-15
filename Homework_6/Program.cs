@@ -54,8 +54,23 @@
 
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
+// k1*x+b1=k2*x+b2=>
+// x(k1-k2)=b2-b1=>
+// x=(b2-b1)/(k1-k2)=>
+// y=k1*x+b1
+
+
+
 
 double PointIntersection(double b1, double k1, double b2, double k2)
 {
-    yDot =
+    double xDot, yDot;
+    xDot = (b2 - b1) / (k1 - k2);
+    yDot = k1 * xDot + b1;
+    return xDot,yDot;
 }
+    void PrintResult()// if(k1==k2)
+    //     System.Console.WriteLine($"Прямые пересекаются, потому что точки k1 и k2 равны,"+
+
+    //     "что протеворечит условию задания");
+    
