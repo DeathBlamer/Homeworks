@@ -134,64 +134,64 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-// int[,] Create2DArray (int rows, int columns, int minValue, int maxValue)
-// {
-//     int [,] array = new int[rows, columns];
-//     for (int i = 0; i < rows; i++)
-//     {
-//         for (int j = 0; j < columns; j++)
-//         {
-//             array[i, j] = new Random().Next(minValue, maxValue + 1);
-//         }
-//     }
-//     return array;
-// }
+int[,] Create2DArray (int rows, int columns, int minValue, int maxValue)
+{
+    int [,] array = new int[rows, columns];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < columns; j++)
+        {
+            array[i, j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+    return array;
+}
 
-// void Print2DArray(int[,] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)// array.GetLength(0) == Количество строк в 2D массиве
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)// array.GetLength(1) == Количество столбцов в 2D массиве
-//         {
-//             System.Console.Write(array[i, j] + " ");
-//         }
-//         System.Console.WriteLine();
-//     }
-//     System.Console.WriteLine();
-// }
+void Print2DArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)// array.GetLength(0) == Количество строк в 2D массиве
+    {
+        for (int j = 0; j < array.GetLength(1); j++)// array.GetLength(1) == Количество столбцов в 2D массиве
+        {
+            System.Console.Write(array[i, j] + " ");
+        }
+        System.Console.WriteLine();
+    }
+    System.Console.WriteLine();
+}
 
-// void AverageColumn (int[,] array)
-// {
-//     for (int j = 0; j < array.GetLength(1); j++)
-//     {
-//         double sum = 0;
-//         for (int i = 0; i < array.GetLength(0); i++)
-//         {
-//             sum += array[i,j];
-//         }
-//         Console.Write($"{ sum / array.GetLength(1)}");
-//         if (j < array.GetLength(1) - 1)
-//         {
-//             System.Console.Write("; ");
-//         }
-//     }
-// }
+void AverageColumn (int[,] array)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        double sum = 0;
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            sum += array[i,j];
+        }
+        Console.Write($"{ sum / array.GetLength(1)}");
+        if (j < array.GetLength(1) - 1)
+        {
+            System.Console.Write("; ");
+        }
+    }
+}
 
-// System.Console.WriteLine("Input number of rows: ");
-// int rows = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine("Input number of columns: ");
-// int columns = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine("Input minimal value of array element: ");
-// int minValue = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine("Input maximal value of array element: ");
-// int maxValue = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Input number of rows: ");
+int rows = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Input number of columns: ");
+int columns = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Input minimal value of array element: ");
+int minValue = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Input maximal value of array element: ");
+int maxValue = Convert.ToInt32(Console.ReadLine());
  
-// System.Console.WriteLine();
+System.Console.WriteLine();
 
-// int [,] MyArray = Create2DArray(rows, columns, minValue, maxValue);
+int [,] MyArray = Create2DArray(rows, columns, minValue, maxValue);
 
-// Print2DArray(MyArray);  
+Print2DArray(MyArray);  
 
-// System.Console.Write("Среднее арифметическое каждого столбца: ");
-// AverageColumn (MyArray);
-// System.Console.WriteLine(".");
+System.Console.Write("Среднее арифметическое каждого столбца: ");
+AverageColumn (MyArray);
+System.Console.WriteLine(".");
